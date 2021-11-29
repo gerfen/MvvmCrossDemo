@@ -95,12 +95,12 @@ namespace MvxFormsMasterDetailDemo.Core.ViewModels
                 default:
                     break;
             }
-            if (Application.Current.MainPage is MasterDetailPage masterDetailPage)
+            if (Application.Current.MainPage is FlyoutPage masterDetailPage)
             {
                 masterDetailPage.IsPresented = false;
             }
             else if (Application.Current.MainPage is NavigationPage navigationPage
-                     && navigationPage.CurrentPage is MasterDetailPage nestedMasterDetail)
+                     && navigationPage.CurrentPage is FlyoutPage nestedMasterDetail)
             {
                 nestedMasterDetail.IsPresented = false;
             }
